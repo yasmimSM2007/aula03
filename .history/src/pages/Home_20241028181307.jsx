@@ -1,15 +1,8 @@
 import {useEffect, useState} from "react";
 import ListarProdutos from "./ListarProdutos";
-import styles from '../styles/Home.module.css'
 export default function Home() {
 
-const Home=()=>{}
-return(
-<div className={styles.home}>
-        <h1>Bem-Vindo a página inicial</h1>
-        <p>Essa é nossa página inicia</p>
-    </div>
-)
+
     const [produtos, setProdutos] = useState([]);
     useEffect(() => {
         const receberListaProdutos = async () => {

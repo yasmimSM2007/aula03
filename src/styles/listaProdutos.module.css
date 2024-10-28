@@ -1,0 +1,12 @@
+.bloco{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    color: palevioletred;
+}
+.home{
+    text-align: center;
+    padding: 20px;
+    background-color: blueviolet;
+}
