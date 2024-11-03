@@ -1,3 +1,4 @@
+
 .listaProdutos {
     display: flex;
     flex-wrap: wrap; 
@@ -38,7 +39,7 @@
 
 .botao {
     background-color: #ff3794; 
-    color: rgb(255, 255, 255); 
+    color: rgb(156, 0, 86); 
     border: none; 
     border-radius: 5px; 
     padding: 10px 15px; 
@@ -49,5 +50,5 @@
 }
 
 .botao:hover {
-    background-color: #ca0098; 
+    background-color: #970071; 
 }

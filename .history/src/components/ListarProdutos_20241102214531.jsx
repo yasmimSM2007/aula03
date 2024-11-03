@@ -1,10 +1,9 @@
-import styles from '../styles/listaProdutos.module.css'
+import styles from '../styles/ListarProdutos.module.css'
 export default function ListarProdutos({lista}) {
 
-    
     return (
         <>
-        <ul className={styles.bloco}>
+       <ul className='{styles.bloco}'>
             {produtos.map(produto => (
                 <li key={produto.id}>
                     <h2>{produto.title}</h2>

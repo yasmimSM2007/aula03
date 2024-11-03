@@ -1,0 +1,16 @@
+.home {
+    text-align: center; /* Centraliza o texto dentro do contêiner */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #f0f8ff; 
+}
+
+.titulo {
+    font-size: 2.5em; /* Tamanho do título */
+    margin: 20px 0; /* Margem para dar espaçamento em cima e embaixo */
+    color: rgb(255, 52, 120);
+}
+.descricao {
+    font-size: 1.2em; /* Tamanho da descrição */
+    color:rgb(253, 129, 150); /* Cor do texto */
+    margin-bottom: 30px; /* Margem abaixo da descrição */
+}

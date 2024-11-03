@@ -1,3 +1,4 @@
+
 .listaProdutos {
     display: flex;
     flex-wrap: wrap; 
@@ -37,8 +38,8 @@
 }
 
 .botao {
-    background-color: #ff3794; 
-    color: rgb(255, 255, 255); 
+    background-color: #ff3aff; 
+    color: rgb(99, 0, 54); 
     border: none; 
     border-radius: 5px; 
     padding: 10px 15px; 

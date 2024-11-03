@@ -1,16 +1,10 @@
-import {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import ListarProdutos from "./ListarProdutos";
 import styles from '../styles/Home.module.css'
-export default function Home() {
 
-const Home=()=>{}
-return(
-<div className={styles.home}>
-        <h1>Bem-Vindo a página inicial</h1>
-        <p>Essa é nossa página inicia</p>
-    </div>
-)
+export default function Home() {
     const [produtos, setProdutos] = useState([]);
+
     useEffect(() => {
         const receberListaProdutos = async () => {
             try {
@@ -18,12 +12,18 @@ return(
                 const dados = await resposta.json();
                 setProdutos(dados);
             } catch (erro) {
-                alert('Ocorreu um erro na comunicação com o servidor')
+                alert('Ocorreu um erro na comunicação com o servidor');
             }
-        }
+        };
+
         receberListaProdutos();
     }, []);
+
     return (
-        <ListarProdutos lista = {produtos}/>
-    )
+        <div className={styles.home}> 
+            <h1>🎀Bem-vindo à Página Inicial!🎀</h1>
+            <p>Essa é a nossa página principal.</p>
+            <ListarProdutos lista={produtos} />
+        </div>
+    );
 }

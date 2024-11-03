@@ -1,0 +1,42 @@
+.bloco{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    color: palevioletred;
+}
+.listaProdutos {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o preenchimento padrão */
+    margin: 0; 
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o preenchimento padrão */
+    margin: 0; 
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.card img {
+    max-width: 100%; /* A imagem não excede a largura do card */
+    border-radius: 4px; /* Bordas arredondadas para a imagem */
+}
+
+.card h2 {
+    font-size: 1.2em; /* Tamanho do título */
+    margin: 10px 0; /* Margem superior e inferior */
+}
+
+.card p {
+    margin: 5px 0; /* Margem superior e inferior para descrições */
+}

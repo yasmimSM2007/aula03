@@ -1,0 +1,17 @@
+.home {
+    text-align: center; 
+    padding: 20px; 
+    background-color:rgb(253, 169, 183); 
+}
+
+.titulo {
+    font-size: 2.5em; 
+    margin: 20px 0; 
+    color: rgb(255, 0, 85);
+}
+.descricao {
+    font-size: 1.2em; 
+    color:rgb(253, 129, 150);
+    margin-bottom: 30px; 
+}
+
