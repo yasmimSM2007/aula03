@@ -1,0 +1,8 @@
+.loadingContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta para ocupar a altura total da tela */
+    width: 100vw;  /* Ajusta para ocupar a largura total da tela */
+}
+

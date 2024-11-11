@@ -19,14 +19,11 @@ export default function Home() {
 
         receberListaProdutos();
     }, []);
-
-    
+    if(lista.length == 0){
+        return (<Loading></Loading>)
+    }
     return (
         
         <div className={styles.home}> 
             <h1 className={styles.titulo}>🎀Bem-vindo à Página Inicial!🎀</h1>
             <p className={styles.descricao}>Essa é a nossa página principal.</p>
-            <ListarProdutos lista={produtos} />
-        </div>
-    );
-}

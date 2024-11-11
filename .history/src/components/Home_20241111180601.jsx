@@ -19,8 +19,9 @@ export default function Home() {
 
         receberListaProdutos();
     }, []);
-
-    
+    if(lista.length == 0){
+        return (<Loading></Loading>)
+    }
     return (
         
         <div className={styles.home}> 
