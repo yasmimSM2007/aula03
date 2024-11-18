@@ -6,10 +6,15 @@ export default function ListarProdutos({ lista }) {
             <Loading/>
         )
     }
-    
+    const orderAZ = ()=>{
+        const listaAux = [...produtos].sort((a,b)=>a.title.localeCompare(b.title));
+        setProdutos(listaAux);
+    }
 
     return (
         <>
+        <button onClick={()=> orderAz()}>Az</button>
+        <button onClick={()=> orderZa()}>Za</button>
            <h1>Lista de Produtos</h1>
             <ul className={styles.listaProdutos}>
                 {lista.map(produto => (

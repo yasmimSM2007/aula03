@@ -6,8 +6,10 @@ export default function ListarProdutos({ lista }) {
             <Loading/>
         )
     }
-    
-
+    const orderAZ = ()=>{
+        const listaAux = [...lista].sort((a,b)=>a.title.localeCompare(b.title));
+        setLista(listaAux);
+    }
     return (
         <>
            <h1>Lista de Produtos</h1>

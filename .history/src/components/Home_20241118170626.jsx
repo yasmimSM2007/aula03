@@ -21,10 +21,10 @@ export default function Home() {
     }, []);
 
   const orderAZ = ()=>{
-        const listaAux = [...lista].sort((a,b)=> a.title.localeCompare(b.title));
-        setLista(listaAux);
+        const listaAux = [...produtos].sort((a,b)=>a.title.localeCompare(b.title));
+        setProdutos(listaAux);
     }  
-     
+    
     return (
         
         <div className={styles.home}> 

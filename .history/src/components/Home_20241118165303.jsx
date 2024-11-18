@@ -20,18 +20,12 @@ export default function Home() {
         receberListaProdutos();
     }, []);
 
-  const orderAZ = ()=>{
-        const listaAux = [...lista].sort((a,b)=> a.title.localeCompare(b.title));
-        setLista(listaAux);
-    }  
-     
+    
     return (
         
         <div className={styles.home}> 
             <h1 className={styles.titulo}>🎀Bem-vindo à Página Inicial!🎀</h1>
             <p className={styles.descricao}>Essa é a nossa página principal.</p>
-            <button onClick={()=> orderAz()}>Az</button>
-    
             <ListarProdutos lista={produtos} />
         </div>
     );

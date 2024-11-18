@@ -6,8 +6,10 @@ export default function ListarProdutos({ lista }) {
             <Loading/>
         )
     }
-    
-
+    const orderAZ = ()=>{
+        const listaAux = [...lista].sort((a,b)=>a.title.localeCompare(b.title));
+        setLista(listaAux);
+    }
     return (
         <>
            <h1>Lista de Produtos</h1>
@@ -19,7 +21,7 @@ export default function ListarProdutos({ lista }) {
                         <p>{produto.description}</p>
                         <p>Preço: R${produto.price}</p>
                         <button className={styles.botao}>Adicionar ao Carrinho</button>
-                        
+                        <button onClick={()=> orderAz()}>Az</button>
                     </li>
                 ))}
             </ul>

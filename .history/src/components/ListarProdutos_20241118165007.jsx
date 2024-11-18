@@ -6,7 +6,6 @@ export default function ListarProdutos({ lista }) {
             <Loading/>
         )
     }
-    
 
     return (
         <>
@@ -19,7 +18,6 @@ export default function ListarProdutos({ lista }) {
                         <p>{produto.description}</p>
                         <p>Preço: R${produto.price}</p>
                         <button className={styles.botao}>Adicionar ao Carrinho</button>
-                        
                     </li>
                 ))}
             </ul>

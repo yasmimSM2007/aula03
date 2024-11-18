@@ -6,7 +6,6 @@ export default function ListarProdutos({ lista }) {
             <Loading/>
         )
     }
-    
 
     return (
         <>
