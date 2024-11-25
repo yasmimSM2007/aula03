@@ -36,7 +36,7 @@ export default function Home() {
     }
 
     const precoD = () =>{
-        const ListaOrd = [...produtos].sort((a, b) => b.price - a.price);
+        const ListaOrd = [...produtos].sort((a, b) => a.price - b.price);
         setProdutos(ListaOrd)
     }
 
@@ -45,10 +45,9 @@ export default function Home() {
         <div className={styles.home}> 
             <h1 className={styles.titulo}>❁Bem-vindo à Página Inicial!❁</h1>
             <p className={styles.descricao}>Essa é a nossa página principal.</p>
-            <button className={styles.botao} onClick={() => orderAZ()}>Az</button>
-            <button className={styles.botao} onClick={() => orderZA()}>Za</button>
-            <button className={styles.botao} onClick={precoC}>Valor - + </button>
-            <button className={styles.botao} onClick={precoD}>Valor + - </button>
+            <button onClick={()=> orderAZ()}>Az</button>
+            <button onClick={()=> orderZA()}>Za</button>
+    
             <ListarProdutos lista={produtos} />
         </div>
     );

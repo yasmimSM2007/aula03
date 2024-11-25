@@ -20,35 +20,19 @@ export default function Home() {
         receberListaProdutos();
     }, []);
 
-    const orderAZ = () => {
-        const ListaAux1 = [...produtos].sort((a, b) => a.title.localeCompare(b.title));
-        setProdutos(ListaAux1);
-    };
+  const orderAZ = () => {
+    const listaAux = [...produtos].sort((a, b) => a.title.localeCompare(b.title));
+    setProdutos(listaAux);
+};
 
-    const orderZA = () => {
-        const ListaAux = [...produtos].sort((a, b) => b.title.localeCompare(a.title));
-        setProdutos(ListaAux);
-    };
-
-    const precoC = () =>{
-        const ListaOrd = [...produtos].sort((a, b) => a.price - b.price);
-        setProdutos(ListaOrd)
-    }
-
-    const precoD = () =>{
-        const ListaOrd = [...produtos].sort((a, b) => b.price - a.price);
-        setProdutos(ListaOrd)
-    }
-
+     
     return (
         
         <div className={styles.home}> 
             <h1 className={styles.titulo}>❁Bem-vindo à Página Inicial!❁</h1>
             <p className={styles.descricao}>Essa é a nossa página principal.</p>
-            <button className={styles.botao} onClick={() => orderAZ()}>Az</button>
-            <button className={styles.botao} onClick={() => orderZA()}>Za</button>
-            <button className={styles.botao} onClick={precoC}>Valor - + </button>
-            <button className={styles.botao} onClick={precoD}>Valor + - </button>
+            <button onClick={()=> orderAz()}>Az</button>
+    
             <ListarProdutos lista={produtos} />
         </div>
     );

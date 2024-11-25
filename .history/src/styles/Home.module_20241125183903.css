@@ -1,0 +1,58 @@
+.home {
+    text-align: center; 
+    padding: 20px; 
+    background-color:rgb(253, 169, 183); 
+}
+
+.titulo {
+    font-size: 2.5em; 
+    margin: 20px 0; 
+    color: rgb(255, 0, 85);
+}
+
+.descricao {
+    font-size: 1.2em; 
+    color:rgb(145, 7, 30);
+    margin-bottom: 30px; 
+}
+
+button {
+    background-color: #4CAF50; /* Cor de fundo: verde */
+    color: white; /* Cor do texto: branco */
+    border: none; /* Remove bordas */
+    padding: 10px 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza texto */
+    text-decoration: none; /* Remove sublinhado (se for link) */
+    display: inline-block; /* Para alinhar em linha */
+    font-size: 16px; /* Tamanho do texto */
+    margin: 5px 10px; /* Espaçamento externo */
+    cursor: pointer; /* Cursor de clique */
+    border-radius: 5px; /* Cantos arredondados */
+    transition: background-color 0.3s ease; /* Efeito suave na mudança de cor */
+  }
+  
+  /* Estilo ao passar o mouse */
+  button:hover {
+    background-color: #45a049; /* Cor ao passar o mouse */
+  }
+  
+  /* Estilo ao pressionar o botão */
+  button:active {
+    background-color: #3e8e41;
+    transform: scale(0.98); /* Leve redução no tamanho */
+  }
+  
+  
+  button:first-child {
+    background-color: #008CBA; 
+  }
+  
+  button:nth-child(2) {
+    background-color: #f44336; 
+  }
+  
+  button:nth-child(3),
+  button:nth-child(4) {
+    background-color: #FF9800; 
+  }
+

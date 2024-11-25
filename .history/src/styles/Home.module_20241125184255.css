@@ -7,7 +7,7 @@
 .titulo {
     font-size: 2.5em; 
     margin: 20px 0; 
-    color: rgb(255, 0, 85);
+    color: rgb(107, 0, 36);
 }
 
 .descricao {
@@ -41,7 +41,6 @@ button {
     background-color: #3e8e41;
     transform: scale(0.98); 
   }
-
   
   button:nth-child(3),
   button:nth-child(4) {
