@@ -1,0 +1,86 @@
+.listaProdutos {
+    display: flex;
+    flex-wrap: wrap; 
+    list-style-type: none; 
+    padding: 20px; 
+    margin: 0; 
+    justify-content: center;
+    background-color: #ffffff; /* Fundo mais suave */
+    gap: 20px; /* Espaçamento consistente entre os cards */
+}
+
+.card {
+    
+    border: 1px solid palevioletred;
+    border-radius: 12px; /* Bordas mais arredondadas */
+    background-color: #ffffff; /* Fundo branco para destacar */
+    margin: 0; /* Removido margem para evitar conflitos com gap */
+    padding: 16px; 
+    width: 250px; /* Largura fixa para uniformizar */
+    height: 350px; /* Altura fixa para alinhar os cards */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra mais moderna */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transição mais suave */
+    display: flex;
+    flex-direction: column; /* Garante alinhamento vertical */
+    justify-content: space-between; /* Distribui o conteúdo */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Sombra mais intensa no hover */
+}
+
+.card img {
+    max-width: 100%; 
+    max-height: 150px; /* Limita a altura da imagem */
+    object-fit: contain; /* Garante que a imagem não distorça */
+    border-radius: 8px; /* Bordas suaves */
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+.card h2 {
+    font-family: 'Poppins', sans-serif; /* Fonte elegante */
+    font-size: 1.2rem; 
+    color: #333; /* Cor legível */
+    margin: 10px 0; 
+    text-align: center; /* Centralizar o título */
+    height: 48px; /* Garante alinhamento, mesmo com textos longos */
+    overflow: hidden; /* Esconde excesso de texto */
+    text-overflow: ellipsis; /* Adiciona "..." para textos longos */
+    white-space: nowrap; /* Mantém o texto em uma linha */
+}
+
+.card p {
+    font-family: 'Roboto', sans-serif; /* Fonte legível e moderna */
+    font-size: 0.9rem; 
+    color: #555; /* Tom mais suave */
+    margin: 5px 0; 
+    height: 60px; /* Limita a descrição */
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+.botao {
+    background-color: #ff3794; 
+    color: rgb(255, 255, 255); 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 15px; 
+    cursor: pointer; 
+    font-size: 1em; 
+    margin-top: 10px; 
+    transition: background-color 0.3s; 
+}
+
+.botao:hover {
+    background-color: #8f0058; 
+}
+
+.titulo{ 
+    margin: 20px 0; 
+    color: #55037e; 
+    text-align: center; 
+    margin-bottom: 15px; 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); 
+    letter-spacing: 1px;
+}

@@ -47,7 +47,7 @@ export default function Home() {
 
     return (
         <div className={styles.home}>
-            <h1 className={styles.titulo}>Bem-vindo à Página Inicial!</h1>
+            <h1 className={styles.titulo}>❁Bem-vindo à Página Inicial!❁</h1>
             <p className={styles.descricao}>Essa é a nossa página principal.</p>
 
           

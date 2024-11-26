@@ -1,0 +1,63 @@
+.listaProdutos {
+    display: flex;
+    flex-wrap: wrap; 
+    list-style-type: none; 
+    padding: 0;
+    margin: 0; 
+    justify-content: center;
+    background-color: rgb(255, 221, 232);
+}
+
+.card {
+    border: 1px solid palevioletred; 
+    border-radius: 8px; 
+    margin: 10px; 
+    padding: 16px; 
+    width: 200px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s; 
+}
+
+.card:hover {
+    transform: scale(1.05); 
+}
+
+.card img {
+    max-width: 100%; 
+    border-radius: 4px; 
+}
+
+.card h2 {
+    font-size: 1.2em; 
+    margin: 10px 0; 
+}
+
+.card p {
+    margin: 5px 0; 
+}
+
+.botao {
+    background-color: #ff3794; 
+    color: rgb(255, 255, 255); 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 15px; 
+    cursor: pointer; 
+    font-size: 1em; 
+    margin-top: 10px; 
+    transition: background-color 0.3s; 
+}
+
+.botao:hover {
+    background-color: #8f0058; 
+}
+
+.titulo{
+    font-size: 2.5em; 
+    margin: 20px 0; 
+    color: #55037e; 
+    text-align: center; 
+    margin-bottom: 15px; 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); 
+    letter-spacing: 1px;
+}

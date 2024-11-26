@@ -7,20 +7,20 @@
 .titulo {
     font-size: 2.5em; 
     margin: 20px 0; 
-    color: #55037e; 
-    text-align: center; 
-    margin-bottom: 15px; 
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); 
-    letter-spacing: 1px; 
+    color: rgb(255, 255, 255);
+    font-family: 'Merriweather', serif; /* Fonte sofisticada e legível */
+    font-size: 2.8rem; /* Maior destaque */
+    color: #2c3e50; /* Tom azul-escuro elegante */
+    text-align: center; /* Centralizado */
+    margin-bottom: 15px; /* Espaçamento inferior */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    letter-spacing: 1px; /* Espaçamento entre letras */
 }
 
 .descricao {
     font-size: 1.2em; 
-    color:#55037e;
+    color:rgb(255, 255, 255);
     margin-bottom: 30px; 
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); 
-    letter-spacing: 1px;
-    text-align: center;
 }
 
 .botao {
