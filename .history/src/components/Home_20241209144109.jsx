@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ListarProdutos from "./ListarProdutos";
 import styles from '../styles/Home.module.css'
+import Loading from "./Loading";
 
 export default function Home() {
     const [produtos, setProdutos] = useState([]);

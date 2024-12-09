@@ -5,7 +5,7 @@
     padding: 20px; 
     margin: 0; 
     justify-content: center;
-    background-color: #555; 
+    background-color: #ffffff; 
     gap: 20px; 
 }
 .card {
@@ -76,7 +76,7 @@
 
 .titulo{ 
     margin: 20px 0; 
-    color: #ffffff; 
+    color: #555; 
     text-align: center; 
     margin-bottom: 15px; 
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); 
